@@ -8,6 +8,13 @@
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
+        <!-- Link Animation -->
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
         <!-- gg font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -97,7 +104,182 @@
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body>
-       
+    <body style="height: 6000px">
+        <!-- Header -->
+        <header class="header fixel">
+            <div class="container">
+                <div class="body-header">
+                    <div class="logo">
+                        <a href="/"
+                            ><img
+                                src="./assets/icon/logo.png"
+                                alt="Lucy"
+                                class="logo__icon"
+                        /></a>
+                    </div>
+                    <nav class="header__navbar">
+                        <ul class="header__list">
+                            <li class="navbar-item">
+                                <a
+                                    href="#!"
+                                    class="navbar-item__link"
+                                    data-text="Home"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="navbar-item">
+                                <a
+                                    href="#!"
+                                    class="navbar-item__link"
+                                    data-text="About"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="navbar-item">
+                                <a
+                                    href="#!"
+                                    class="navbar-item__link"
+                                    data-text="Services & Rates"
+                                >
+                                    Services & Rates
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a
+                                    href="#!"
+                                    class="navbar-item__link"
+                                    data-text="Review"
+                                >
+                                    Review
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a
+                                    href="#!"
+                                    class="navbar-item__link"
+                                    data-text="Contacts us"
+                                >
+                                    Contacts us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#!" class="btn btn-header" type="submit">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__content">
+                        <!-- Image Hero -->
+                        <div class="hero__image-large">
+                            <div class="hero__bg-img">
+                                <img
+                                    src="./assets/image/car-orange-hero.png"
+                                    alt=""
+                                    class="hero__car-thumb"
+                                />
+                            </div>
+                            <div class="hero__bg-img">
+                                <img
+                                    src="./assets/image/dog-red-pink-hero.png"
+                                    alt=""
+                                    class="hero__dog-thumb"
+                                />
+                            </div>
+                            <div class="hero-feedback">
+                                <div class="hero-feedback__content">
+                                    <div class="hero-feedback__row">
+                                        <div class="hero-feedback__bg-img">
+                                            <img
+                                                src="./assets/image/hero-feedback-1.png"
+                                                alt="pet"
+                                                class="hero-feedback__avt-pet"
+                                            />
+                                        </div>
+                                        <div class="hero-feedback__info">
+                                            <span class="hero-feedback__text">
+                                                Pet Health
+                                            </span>
+                                            <div
+                                                class="hero-feedback__info--line-long"
+                                            ></div>
+                                            <div
+                                                class="hero-feedback__info--line-short"
+                                            ></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hero-feedback__line"></div>
+
+                                    <div class="hero-feedback__row">
+                                        <div class="hero-feedback__bg-img">
+                                            <img
+                                                src="./assets/image/hero-feedback-2.png"
+                                                alt="pet"
+                                                class="hero-feedback__avt-pet"
+                                            />
+                                        </div>
+                                        <div class="hero-feedback__info">
+                                            <span class="hero-feedback__text">
+                                                Pet care
+                                            </span>
+                                            <div
+                                                class="hero-feedback__info--line-long"
+                                            ></div>
+                                            <div
+                                                class="hero-feedback__info--line-short"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Info Hero -->
+                        <div class="hero__info">
+                            <h1
+                                class="hero__title animate__animated animate__rubberBand"
+                            >
+                                Established & Trusted Pet Care Service
+                            </h1>
+                            <p class="hero__desc">
+                                Discover a wide variety of Pawsitive services to
+                                choose from, including daycare, private walks,
+                                office duty and spa.
+                            </p>
+                            <div class="hero__ctn">
+                                <a href="#!" class="btn hero__btn">
+                                    Book a Meet
+                                    <div class="hero__bg-arrow">
+                                        <svg
+                                            class="hero__arrow"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="5"
+                                            height="6"
+                                            viewBox="0 0 5 6"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M1.48584 0.5L3.98584 3L1.48584 5.5"
+                                                stroke="#ff5b2e"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="#!" class="hero__ctn-text"
+                                    >Schedule a Call</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
