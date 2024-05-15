@@ -786,3 +786,119 @@ body {
     margin-top: 45px;
     text-align: center;
 }
+
+/* Staff */
+.staff {
+    margin-top: 100px;
+    padding: 30px 0;
+}
+
+.staff__top {
+    text-align: center;
+}
+
+.staff__sub-title {
+    margin-bottom: 15px;
+    color: #5e6085;
+    font-family: Sora;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.staff__list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+}
+
+.staff-item {
+    position: relative;
+    text-align: center;
+}
+
+.staff-item::after {
+    content: url(../icon/staff-decor-01.svg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 78px;
+}
+
+.staff-item:nth-child(2):after {
+    content: url(../icon/staff-decor-02.svg);
+    position: absolute;
+}
+
+.staff-item:nth-child(3):after {
+    content: url(../icon/staff-decor-03.svg);
+    position: absolute;
+}
+
+.staff-item:nth-child(4):after {
+    content: url(../icon/staff-decor-04.svg);
+    position: absolute;
+}
+
+.staff-item:nth-child(even)::after {
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.staff-item__img-wrap {
+    margin: 0 16px;
+}
+
+.staff-item__bg-img {
+    position: relative;
+    width: 234px;
+    height: 266px;
+    border-radius: 130px;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff-item:nth-child(2) .staff-item__bg-img {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.staff-item:nth-child(3) .staff-item__bg-img {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.staff-item:nth-child(4) .staff-item__bg-img {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff-item__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    border-radius: 130px;
+}
+
+.staff-item__job {
+    margin-top: 34px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.staff-item__name {
+    display: inline-block;
+    padding-top: 14px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.staff__ctn {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
