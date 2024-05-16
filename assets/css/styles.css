@@ -902,7 +902,7 @@ body {
     display: flex;
     justify-content: center;
 }
-                                                                                                                                                                  
+
 /* Pricing */
 .pricing {
     padding: 86px 0;
@@ -1043,14 +1043,13 @@ body {
     border: 1px solid rgba(255, 91, 46, 0.6);
 }
 
-.pricing-card__btn:hoverF {
+.pricing-card__btn:hoverf {
     opacity: 0.8;
 }
 
 .pricing-card:nth-child(2) .pricing-card__btn {
     background: var(--primary-color);
     color: #fff;
-    
 }
 
 .pricing-card__list {
@@ -1075,4 +1074,132 @@ body {
 .pricing-card__item::before {
     content: url(../icon/check-orange.svg);
     color: #ff5b2e;
+}
+
+/* Review */
+.review {
+    padding: 53px 0;
+    margin-top: 77px;
+}
+
+.review__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 44px;
+}
+
+.review__control {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5px solid #ffd1c4;
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.review__control:nth-of-type(2) {
+    margin-left: auto;
+    rotate: 180deg;
+}
+.review__control:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.review-item__media {
+    margin-top: -53px;
+    position: relative;
+    border-radius: 137px;
+    flex-shrink: 0;
+    width: 274px;
+}
+
+.review-item__media::after {
+    content: "";
+    position: absolute;
+    border-radius: 137px;
+    inset: auto 0 0 0;
+    height: 82%;
+    background: #ffda54;
+}
+
+.review-item__img {
+    position: relative;
+    display: block;
+    border-radius: inherit;
+    width: 100%;
+    z-index: 1;
+}
+.review__content {
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.review__list {
+    display: flex;
+}
+
+.review-item__quote {
+    width: 553px;
+    margin-top: 24px;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.55;
+}
+
+.review-item__author {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    color: #282828;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.review-item__author::before {
+    margin-right: 8px;
+    display: inline-block;
+    content: "";
+    height: 2px;
+    width: 20px;
+    border-radius: 10px;
+    background: #000;
+}
+
+.review__dots {
+    display: flex;
+    margin-top: 56px;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.review__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 88px;
+    border: 1px solid #ff5b2e;
+}
+
+.review__dot--active {
+    width: 24px;
+    height: 8px;
+    border-radius: 9px;
+    background: #ff5b2e;
 }
